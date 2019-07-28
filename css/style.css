@@ -1,0 +1,118 @@
+blockquote, body, button, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, lengend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 10px auto;
+}
+
+
+#header {
+    border-bottom: 8px solid #7c97ae;
+}
+
+#logo {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+#title {
+    float: right;
+    text-align: right;
+}
+
+#title h1 {
+    font-size: 54px;
+}
+
+#title p {
+    font-size: 16px;
+}
+
+#hero-image {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+#list {
+    width: 100%;
+}
+
+#list h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.list-item {
+    float: left;
+    /*width: 32%;*/
+    /*margin-right: 2%;*/
+    width: calc((100% - 10px * 3)/4);
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.list-item:last-of-type {
+    margin-right: 0;
+}
+
+.list-item img {
+    width: 100%;
+    height: auto;
+}
+
+.list-item h3 {
+    font-size: 30px;
+}
+
+.list-item a {
+    color: #4f4f4f;
+}
+
+@media screen and (max-width: 960px) {
+    .list-item {
+        float: left;
+        width: calc((100% - 10px * 2) / 2);
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list-item {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+}
